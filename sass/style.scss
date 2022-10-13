@@ -1,0 +1,16 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+@use 'gallery';
+
+.main-container{
+    position: relative;
+    width: 375px;
+    border: 1px solid black;
+    margin: auto;
+    @media (min-width: 1115px){
+        width: 1115px;
+    }
+}
