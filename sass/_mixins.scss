@@ -10,7 +10,7 @@
     display: none;
 }
 
-@mixin image-btn($top, $left) {
+@mixin image-btn($top, $left, $showDesktop) {
     background-color: v.$White;
         width: 40px;
         height: 40px;
@@ -21,6 +21,14 @@
         left: $left;
         &:hover{
             cursor: pointer;
+        }
+        @media(min-width:1115px){
+            @if ($showDesktop == true){
+                display: block;
+            }@else{
+                display: none;
+            }
+            
         }
 }
 

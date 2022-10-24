@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title>Snackers | E-commerce</title>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 18px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -24,11 +21,11 @@
         <img class="header__logo" src="images/logo.svg" alt="logo">
         <nav class="navbar">
           <ul class="navbar__items">
-            <li><a class="navbar__link" href="#">Collections</a></li>
-            <li><a class="navbar__link" href="#">Men</a></li>
-            <li><a class="navbar__link" href="#">Women</a></li>
-            <li><a class="navbar__link" href="#">About</a></li>
-            <li><a class="navbar__link" href="#">Contact</a></li>
+            <li><a class="navbar__link" href="#">Colecciones</a></li>
+            <li><a class="navbar__link" href="#">Hombres</a></li>
+            <li><a class="navbar__link" href="#">Mujeres</a></li>
+            <li><a class="navbar__link" href="#">Nosotros</a></li>
+            <li><a class="navbar__link" href="#">Contactos</a></li>
           </ul>
         </nav>
       </div>
@@ -38,18 +35,18 @@
         <nav class="modal-navbar">
           <img class="modal-navbar__close-icon" src="images/icon-close.svg" alt="close icon">
           <ul class="modal-navbar__items">
-            <li><a class="modal-navbar__link" href="#">Collections</a></li>
-            <li><a class="modal-navbar__link" href="#">Men</a></li>
-            <li><a class="modal-navbar__link" href="#">Women</a></li>
-            <li><a class="modal-navbar__link" href="#">About</a></li>
-            <li><a class="modal-navbar__link" href="#">Contact</a></li>
+            <li><a class="modal-navbar__link" href="#">Colecciones</a></li>
+            <li><a class="modal-navbar__link" href="#">Hombres</a></li>
+            <li><a class="modal-navbar__link" href="#">Mujeres</a></li>
+            <li><a class="modal-navbar__link" href="#">Nosotros</a></li>
+            <li><a class="modal-navbar__link" href="#">Contactos</a></li>
           </ul>
         </nav>
       </div>
       <!--Final mobal-->
       <div class="header__cart-avatar">
         <div class="header__cart">
-          <div class="header__cart--notification">3</div>
+          <div class="header__cart--notification">0</div>
           <img src="images/icon-cart.svg" alt="cart icon">
         </div>
         <img class="header__avatar" src="images/image-avatar.png" alt="avatar">
@@ -71,9 +68,8 @@
       </article>
       <article class="details">
         <h2 class="details__company">Sneaker Company</h2>
-        <h2 class="details__title">Fall Limited Edition Sneakers</h2>
-        <p class="details__descriptions">These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <h2 class="details__title">Calsados Personalizados a tu medida</h2>
+        <p class="details__descriptions">TEl calzado deportivo o zapatillas de deporte es un tipo de calzado que se utiliza para realizar distintos tipos de deporte. Generalmente posee un cuerpo fabricado en piel, lona y/o materiales sintéticos, y una suela de gamo que ofrece una mayor adherencia, así como flexibilidad.</p>
         <div class="details__prices">
           <p class="details__now">$125.00 <span class="details__discont">50%</span></p>
           <p class="details__before">$250.00</p>
@@ -84,7 +80,7 @@
             <input class="input__number" type="text" value="0">
             <img class="input__plus" src="images/icon-plus.svg" alt="plus">
           </div>
-          <button class="details__button"> <img src="images/icon-cart-white.svg" alt="cart"> Add to cart</button>
+          <button class="details__button"> <img src="images/icon-cart-white.svg" alt="cart"> Agregar al Carrito</button>
         </div>
       </article>
     </section>
@@ -94,41 +90,42 @@
       <p class="cart-modal__title">Cart</p>
       <div class="cart-modal__checkout-container">
         <div class="cart-modal__details-container">
-          <img src="images/image-product-1-thumbnail.jpg" alt="cart modal">
+          <img class="cart-modal__image" src="images/image-product-1-thumbnail.jpg" alt="cart modal">
           <div>
             <p class="cart-modal__product">Autumn Limited Edition..</p>
             <p class="cart-modal__price">$125 x3 <span>$375.00</span></p>
           </div>
           <img class="cart-modal__delete" src="images/icon-delete.svg" alt="delete">
         </div>
-        <button class="cart-modal__delete">Checkout</button>
+        <button class="cart-modal__checkout">Checkout</button>
       </div>
     </div>
     <!--final modal cart-->
-
-    <!--inicio gallery modal-->
-    <div class="modal-gallery__background">
-      <article class="modal-gallery">
-        <img class="modal-gallery__close" src="./images/icon-close.svg" alt="gallery close">
-        <div class="modal-gallery__image-container">
-          <img class="modal-gallery__previous" src="images/icon-previous.svg" alt="previous">
-          <img class="modal-gallery__next" src="images/icon-next.svg" alt="next">
-        </div>
-        <div class="modal-gallery__thumnails">
-          <img id="m1" class="modal-gallery__thumnail" src="images/image-product-1-thumbnail.jpg" alt="thumnail">
-          <img id="m2" class="modal-gallery__thumnail" src="images/image-product-2-thumbnail.jpg" alt="thumnail">
-          <img id="m3" class="modal-gallery__thumnail" src="images/image-product-3-thumbnail.jpg" alt="thumnail">
-          <img id="m4" class="modal-gallery__thumnail" src="images/image-product-4-thumbnail.jpg" alt="thumnail">
-        </div>
-      </article>
-    </div>
-    <!--inicio gallery modal-->
   </main>
   
+  <!--inicio gallery modal-->
+  <div class="modal-gallery__background">
+    <article class="modal-gallery">
+      <div class="modal-gallery__close-container">
+        <img class="modal-gallery__close" src="./images/icon-close.svg" alt="gallery close">
+      </div>
+      <div class="modal-gallery__image-container">
+        <img class="modal-gallery__previous" src="images/icon-previous.svg" alt="previous">
+        <img class="modal-gallery__next" src="images/icon-next.svg" alt="next">
+      </div>
+      <div class="modal-gallery__thumnails">
+        <img id="m1" class="modal-gallery__thumnail" src="images/image-product-1-thumbnail.jpg" alt="thumnail">
+        <img id="m2" class="modal-gallery__thumnail" src="images/image-product-2-thumbnail.jpg" alt="thumnail">
+        <img id="m3" class="modal-gallery__thumnail" src="images/image-product-3-thumbnail.jpg" alt="thumnail">
+        <img id="m4" class="modal-gallery__thumnail" src="images/image-product-4-thumbnail.jpg" alt="thumnail">
+      </div>
+    </article>
+  </div>
+  <!--inicio gallery modal-->
   
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/CristhianSvedov" target="_blank">Cristhian Svedov</a>.
+    Creado Por <a href="https://github.com/CristhianSvedov" target="_blank">Cristhian Svedov</a>.
   </footer>
+  <script src="./mian.js"></script>
 </body>
 </html>

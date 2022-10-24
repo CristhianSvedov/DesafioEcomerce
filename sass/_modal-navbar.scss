@@ -1,7 +1,6 @@
 @use 'variables';
 @use 'mixins';
 .modal-navbar{
-    //display: none;
     &__background{
         @include mixins.modal-background;
     }
